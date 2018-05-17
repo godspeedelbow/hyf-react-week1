@@ -4,7 +4,13 @@ import './App.css';
 
 import Content from './Content';
 
+import getHNStories from './get-hn-stories';
+
 function Header() {
+  getHNStories('job')
+    .then(console.log)
+    .catch(console.error);
+
   return (
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
