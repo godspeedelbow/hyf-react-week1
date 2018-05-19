@@ -9,7 +9,7 @@ function getHNStories(storyType = 'top') {
   const storyField = `${storyType}Stories`;
   const query = `
     {
-      ${storyField}a {
+      ${storyField} {
         id
         by {
           id
