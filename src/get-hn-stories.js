@@ -1,3 +1,10 @@
+/**
+ * fetches HackerNews stories.
+ * example:
+ *   getHNStories('job')
+ *     .then(console.log)
+ *     .catch(console.error);
+ */
 import { HackerNews } from 'graphqlhub-schemas';
 import { GraphQLSchema, graphql } from 'graphql';
 
